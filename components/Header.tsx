@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { SignInButton, UserButton, SignedIn, SignedOut } from '@clerk/clerk-react';
 const CodeIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -17,11 +17,18 @@ const Header: React.FC = () => {
                     </h1>
                 </div>
                  <div className="flex items-center gap-4">
-                     <button className="text-gray-300 hover:text-white transition-colors duration-300">
-                         Login
-                     </button>
+                     <SignedOut>
+                         <SignInButton className="text-gray-300 hover:text-white transition-colors duration-300">
+                             Login
+                         </SignInButton>
+                     </SignedOut>
                      <a href="#pricing" className="bg-purple-600 hover:bg-purple-500 text-white font-bold py-2 px-5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(168,85,247,0.6)]">
-                        Sign Up
+                        Sign Up for Free
+                     </a>
+                     <SignedIn>
+                         <UserButton afterSignOutUrl="/" />
+                     </SignedIn>
+                     <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300">
                     </a>
                  </div>
             </div>
