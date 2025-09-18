@@ -16,18 +16,18 @@ const FeatureCard: React.FC<{ icon: JSX.Element; title: string; children: React.
 const Features: React.FC = () => (
     <section id="features" className="py-24">
         <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-gamified text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">Unlock Your Potential</h2>
-            <p className="text-lg text-purple-300 mt-2">Core features designed for rapid skill progression.</p>
+            <h2 className="text-4xl md:text-5xl font-gamified text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">Desbloqueie seu Potencial</h2>
+            <p className="text-lg text-purple-300 mt-2">Recursos principais projetados para rápida progressão de habilidades.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <FeatureCard title="AI Questmaster" icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM18 13.5a3.375 3.375 0 00-3.375-3.375h-1.5a3.375 3.375 0 00-3.375 3.375v1.5A3.375 3.375 0 0013.125 18v1.5a3.375 3.375 0 003.375 3.375h1.5a3.375 3.375 0 003.375-3.375v-1.5a3.375 3.375 0 00-3.375-3.375h-1.5z" /></svg>}>
-                Get personalized, step-by-step roadmaps from our advanced AI for any project you can imagine.
+                Transforme suas ideias em quests gamificadas com etapas acionáveis, tornando o aprendizado divertido e envolvente.
             </FeatureCard>
-            <FeatureCard title="Gamified Learning" icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9a9.75 9.75 0 100-13.5h9a9.75 9.75 0 100 13.5z" /><path strokeLinecap="round" strokeLinejoin="round" d="M6.75 12.75l3 3m0-3l-3 3M17.25 12.75h-6.75" /></svg>}>
-                Earn XP, level up, and stay motivated. Turn the grind of learning into an addictive game.
+            <FeatureCard title="Aprendizado Gamificado" icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9a9.75 9.75 0 100-13.5h9a9.75 9.75 0 100 13.5z" /><path strokeLinecap="round" strokeLinejoin="round" d="M6.75 12.75l3 3m0-3l-3 3M17.25 12.75h-6.75" /></svg>}>
+                Ganhe XP, suba de nível e mantenha-se motivado. Transforme a rotina de aprendizado em um jogo viciante.
             </FeatureCard>
-            <FeatureCard title="Actionable Steps" icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}>
-                No more vague tutorials. Receive clear, concise tasks that guide you from concept to completion.
+            <FeatureCard title="Passo a Passo personalizado" icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}>
+                Chega de tutoriais vagos. Receba tarefas claras e concisas que o guiam do conceito à conclusão.
             </FeatureCard>
         </div>
     </section>
@@ -55,7 +55,7 @@ const Pricing: React.FC = () => (
     <section id="pricing" className="py-24 bg-gray-900/50">
         <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-gamified text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]">Choose Your Path</h2>
-            <p className="text-lg text-purple-300 mt-2">Simple, transparent pricing for every developer level.</p>
+            <p className="text-lg text-purple-300 mt-2">Simples e acessível para todos os níveis de desenvolvedores.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
              <PricingTier 
@@ -101,10 +101,10 @@ const App: React.FC = () => {
                     {/* Hero Section */}
                     <section className="py-20 text-center">
                          <h1 className="text-5xl md:text-7xl font-gamified text-white mb-4 drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]">
-                            Stop Tutorial Hell.
+                           Pare com tutoriais excessivos.
                         </h1>
                         <p className="text-xl md:text-2xl text-purple-300 max-w-3xl mx-auto">
-                            Transform your project ideas into <span className="text-cyan-400 font-bold">gamified quests</span> and start building, not just watching.
+                            Transforme suas ideias de projeto em <span className="text-cyan-400 font-bold">quests gamificadas</span> e comece a construir, não apenas assistir.
                         </p>
                     </section>
                     

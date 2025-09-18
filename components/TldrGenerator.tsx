@@ -37,15 +37,15 @@ const TldrGenerator: React.FC = () => {
     const LoadingIndicator = () => (
         <div className="text-center p-8 space-y-4">
             <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-cyan-400 mx-auto"></div>
-            <p className="text-lg text-purple-300 font-semibold">Forging Your Epic Quest...</p>
-            <p className="text-sm text-gray-400">The AI Golems are hard at work.</p>
+            <p className="text-lg text-purple-300 font-semibold">Forjando sua Epic Quest...</p>
+            <p className="text-sm text-gray-400">Os golems IA estão fazendo um trabalho duro.</p>
         </div>
     );
 
     return (
         <div id="generator" className="w-full max-w-2xl mx-auto bg-gray-800/60 backdrop-blur-lg border border-purple-500/30 rounded-2xl p-8 shadow-2xl shadow-purple-900/30">
-            <h2 className="text-3xl font-gamified text-center mb-2 text-white">Your Coding Quest Awaits!</h2>
-            <p className="text-center text-gray-400 mb-6">Tell us your goal, and our AI will forge a personalized roadmap.</p>
+            <h2 className="text-3xl font-gamified text-center mb-2 text-white">Sua Epic Quest Aguarda!</h2>
+            <p className="text-center text-gray-400 mb-6">Conte-nos seu objetivo e nossa IA forjará um roteiro personalizado.</p>
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                     <label htmlFor="language" className="block text-sm font-bold text-cyan-400 mb-2">
